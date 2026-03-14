@@ -1,8 +1,8 @@
 class Zathura < Formula
   desc "PDF viewer"
   homepage "https://pwmt.org/projects/zathura/"
-  url "https://github.com/pwmt/zathura/archive/refs/tags/0.5.11.tar.gz"
-  sha256 "32540747a6fe3c4189ec9d5de46a455862c88e11e969adb5bc0ce8f9b25b52d4"
+  url "https://github.com/pwmt/zathura/archive/refs/tags/2026.02.03.tar.gz"
+  sha256 "a554799f4f7182f509ea611b3efc36de45645cf725a79d4bbeca02a089e9965f"
   license "Zlib"
   head "https://github.com/pwmt/zathura.git", branch: "develop"
 
@@ -42,10 +42,10 @@ class Zathura < Formula
       # Optionally remove the title bar on macOS with the "-T" or "--no-titlebar" arguments
       patch do
         url "file://#{__dir__}/../patches/no-titlebar.diff"
-        sha256 "5243224b088bcbac7bfce93322d58b8bd23a6d4011d9395040ed1f897ae569ad"
+        sha256 "c95c2ed65a412ab4199ef238ca1507a0988821596daaa00294bb27bd925dd6fe"
       end
     end
-
+    
   end
 
   def install
